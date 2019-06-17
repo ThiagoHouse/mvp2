@@ -12,12 +12,12 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Pecas',
+            name='Anunciante',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nome', models.CharField(max_length=150)),
-                ('descricao', models.TextField()),
-                ('preco', models.DecimalField(decimal_places=2, max_digits=7)),
+                ('senha', models.TextField()),
+                ('email', models.DecimalField(decimal_places=2, max_digits=7)),
             ],
         ),
     ]

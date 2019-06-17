@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'pecas',
     'enderecoEntrega',
     'cliente',
+    'anunciante',
 
 ]
 

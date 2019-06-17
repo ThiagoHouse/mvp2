@@ -21,15 +21,25 @@ from pedido.api.viewsets import PedidoViewSet
 from pecas.api.viewsets import PecasViewSet
 from cliente.api.viewsets import ClienteViewSet
 from enderecoEntrega.api.viewsets import EnderecoEntregaViewSet
+from anunciante.api.viewsets import AnucianteViewSet
 
+# Rotas das APIs
 router = routers.DefaultRouter()
 router.register(r'pedidos', PedidoViewSet)
 router.register(r'pecas', PecasViewSet)
 router.register(r'clientes', ClienteViewSet)
 router.register(r'enderecoEntrega', EnderecoEntregaViewSet)
+router.register(r'anunciante', AnucianteViewSet)
 
+# Rota dos anunciante
+#router = routers.DefaultRouter()
+#router.register(r'anunciante/', )
+
+
+
+#Rotas dos administradores
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
-    path('anunciante/', admin.site.urls),
+    #path('anunciante/', admin.site.urls),
 ]
