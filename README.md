@@ -20,6 +20,11 @@ pip install django
 #
 pip install djangorestframework
 
+# Criar usuario
+
+python manage.py createsuperuser
+
+
 
 
 
